@@ -1,0 +1,64 @@
+$background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 1) 85%),
+    radial-gradient(ellipse at top left, rgba(13, 110, 253, 0.5), transparent 50%),
+    radial-gradient(ellipse at top right, rgba(255, 228, 132, 0.5), transparent 50%),
+    radial-gradient(ellipse at center right, rgba(112, 44, 249, 0.5), transparent 50%),
+    radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+
+.home {
+    background-image: #{$background-image};
+}
+
+// a img {
+//     filter: grayscale(100%);
+//     /* add grayscale filter to images */
+//     transition: filter 0.5s;
+//     /* add transition effect */
+// }
+
+// a:hover img {
+//     filter: grayscale(0);
+//     /* remove grayscale filter on hover */
+// }
+/* Initial navbar style */
+// .navbar {
+//     transition: background-color 0.3s ease;
+//     background-color: transparent;
+//     color: whitesmoke;
+// }
+
+// /* Navbar style when scrolled */
+// .navbar.scrolled {
+//     background-color: #0d6efd; /* Add the desired background color */
+//     // background-color: rgba(255, 255, 255, 0.9); /* Change to a white background with some transparency */
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+// }
+/* Initial navbar style */
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    color: inherit;
+    /* Maintain the inherited color */
+}
+
+/* Navbar style when scrolled */
+.navbar.scrolled {
+    background-color: #0d6efd;
+    /* Background color */
+    color: #fff;
+    /* White font color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+}
+
+.navbar.scrolled .nav-link {
+    color: #fff;
+    /* White color for nav links */
+}
+
+.navbar.scrolled .navbar-brand {
+    color: #fff;
+    /* White color for the brand */
+}
+.offcanvas {
+    width: 250px;
+}
